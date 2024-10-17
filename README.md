@@ -17,7 +17,7 @@ We use python 3.9.19 and pytorch 1.13.0. We recommend using conda to install the
 conda env create -f environment.yml
 ```
 You also need to install the relative packages to run ESM-1b protein language model. \
-Please see [facebookresearch/esm](https://github.com/facebookresearch/esm#getting-started-with-this-repo-) for details. \
+Please see [facebookresearch/esm](https://github.com/facebookresearch/esm#getting-started-with-this-repo-) for details. 
 
 ## Usage
 
@@ -48,3 +48,18 @@ python Predictor.py  --sub_function ${sub-functional ontologies} --config-file $
 # python Predictor.py  --sub_function cc --config-file ./configs/best/cfg_protein_cc.py --pdb ./data/4RQ2-A.pdb --prob 0.5
 ```
 Predictor.py is used to predict protein function. where `--sub_function` is the type of function to be predicted, including {mf, bp, cc}; `--config-file` is the path to the model configuration file; `--pdb` is the path to the protein PDB file; `--prob` is the threshold for feature prediction.
+
+#### output
+```txt
+The protein may hold the following functions of CC:
+Possibility: 0.55 ||| Functions: GO:0031974, membrane-enclosed lumen
+Possibility: 0.56 ||| Functions: GO:0031981, nuclear lumen
+Possibility: 0.54 ||| Functions: GO:0070013, intracellular organelle lumen
+Possibility: 0.53 ||| Functions: GO:1902494, catalytic complex
+Possibility: 0.59 ||| Functions: GO:0005654, nucleoplasm
+Possibility: 0.61 ||| Functions: GO:0005739, mitochondrion
+Possibility: 0.59 ||| Functions: GO:0005829, cytosol
+Possibility: 0.56 ||| Functions: GO:0000781, chromosome, telomeric region
+Possibility: 0.98 ||| Functions: GO:0005634, nucleus
+Possibility: 0.55 ||| Functions: GO:0043233, organelle lumen
+```
