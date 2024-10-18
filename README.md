@@ -1,4 +1,4 @@
-# HLTPGO: Harnessing Long-Tail Phenomenon for Accurate Protein Function Prediction
+# GOBoost: Leveraging Long-Tail Gene Ontology Terms for Accurate Protein Function Prediction
 
 <div align="center">
   <img src="Fig/Overview.png" width="100%"/>
