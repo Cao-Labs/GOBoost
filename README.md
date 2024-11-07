@@ -3,14 +3,14 @@
 <div align="center">
   <img src="Fig/Overview.png" width="100%"/>
 </div>
-we propose the HLTPGO method, which incorporates a long-tail optimization ensemble strategy. HLTPGO employs the base model HLTPGO Sig, introduces a global-local label graph module, and utilizes a multi-granularity focal loss function to enhance long-tail functional information, mitigate the long-tail phenomenon, and improve overall prediction accuracy.
+we propose the GOBoost method, which incorporates a long-tail optimization ensemble strategy. GOBoost employs the base model GOBoost Sig, introduces a global-local label graph module, and utilizes a multi-granularity focal loss function to enhance long-tail functional information, mitigate the long-tail phenomenon, and improve overall prediction accuracy.
 
 ## Installation
 
 ```bash
 # clone the repo
-git clone https://github.com/Cao-Labs/HLTPGO.git
-cd HLTPGO
+git clone https://github.com/Cao-Labs/GOBoost.git
+cd GOBoost
 ```
 We use python 3.9.19 and pytorch 1.13.0. We recommend using conda to install the dependencies:
 ```bash
