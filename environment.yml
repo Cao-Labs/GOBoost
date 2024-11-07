@@ -1,4 +1,4 @@
-name: HLTPGO
+name: GOBoost
 channels:
   - pytorch
   - nvidia
@@ -255,4 +255,4 @@ dependencies:
     - werkzeug==3.0.3
     - yarl==1.9.4
     - zipp==3.18.1
-prefix: /home/wangyang/anaconda3/envs/HLTPGO
+prefix: /home/wangyang/anaconda3/envs/GOBoost
