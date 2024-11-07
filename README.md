@@ -21,6 +21,12 @@ Please see [facebookresearch/esm](https://github.com/facebookresearch/esm#gettin
 
 ## Usage
 
+### Trained model
+
+Our data set can be downloaded from [here](https://zenodo.org/records/14048928).
+
+The model with the "_pdb" suffix is ​​trained on the PDB dataset for all function labels. The rest of the models are trained on the PDB and AF2 datasets. The model with the "_All" suffix is ​​trained on all function labels, the model with the "_Head" suffix is ​​trained on the high-frequency labels at the head, and the model with the "_Tail" suffix is ​​trained on the medium- and low-frequency labels at the tail.
+
 ### Model Training:
 ```bash
 python train.py --train_part ${base_model_nane} --batch_size ${batch_size} --epochs ${max_epoch} --sub_function ${sub-functional ontologies} --AF2model ${enhanced} --config-file ${config}
