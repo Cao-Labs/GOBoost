@@ -1,7 +1,7 @@
 # GOBoost: Leveraging Long-Tail Gene Ontology Terms for Accurate Protein Function Prediction
 
 <div align="center">
-  <img src="Fig/Overview.png" width="100%"/>
+  <img src="./Overview.png" width="100%"/>
 </div>
 we propose the GOBoost method, which incorporates a long-tail optimization ensemble strategy. GOBoost employs the base model GOBoost Sig, introduces a global-local label graph module, and utilizes a multi-granularity focal loss function to enhance long-tail functional information, mitigate the long-tail phenomenon, and improve overall prediction accuracy.
 
